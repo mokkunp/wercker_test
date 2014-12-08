@@ -11,16 +11,16 @@ build:
   steps:
     # Uncomment this to force RVM to use a specific Ruby version
     # - rvm-use:
-    #       version: 2.1.5
+    #   version: 2.1.5
 
     # A step that executes `bundle install` command
     - bundle-install
 
-      # A step that prepares the database.yml using the database in services
-      # - rails-database-yml
+    # A step that prepares the database.yml using the database in services
+    # - rails-database-yml
 
-      # A custom script step, name value is used in the UI
-      # and the code value contains the command that get executed
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
     - script:
       name: echo ruby information
       code: |
@@ -30,6 +30,6 @@ build:
 
       # Add more steps here:
       # - script:
-      #        name: rspec
-      #        code: bundle exec rspec
+      #   name: rspec
+      #   code: bundle exec rspec
 
